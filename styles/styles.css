@@ -130,7 +130,7 @@ div.sidebar {
 
 }
 div.content {
-	width: calc(70% - 15px);
+	width: calc(100% - 215px);
 	min-height: 200px;
 	margin-left: 15px;
 }
@@ -370,19 +370,53 @@ div.sidebar .genre-filter li {
  	overflow: hidden;
 }
 
-div.content img {
-	display: inline;
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-bottom: 150px;
+div.content .items {
+	margin-right: 10px;
+  	margin-bottom: 10px;
 	float: left;
-	height: 350px;
-	width: 350px;
+	width: calc(33.333% - 6.66px);
+	position: relative;
 }
 
-div.content a>img .caption {
-	text-align:center;
-	display:inline-block;
-    text-decoration:none;
-    color:black;
+div.content .items img {
+  	width: 100%;
+  	display: block;
+}
+
+div.content .items:nth-child(3n) {
+  	margin-right: 0;
+}
+
+div.content .items a img.over {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .2s ease;
+}
+
+div.content .items a:hover img.over {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  div.sidebar {
+    display: none;
+  }
+
+  div.content {
+    width: 100%;
+    margin: 0;
+  }
+  div.content .items:nth-child(3n) {
+    margin-right: inherit;
+  }
+  div.content .items:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  div.content .items {
+  	width: calc(50% - 5px);    
+  }
 }
