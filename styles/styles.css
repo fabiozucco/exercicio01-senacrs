@@ -393,6 +393,7 @@ div.content .items a img.over {
   top: 0;
   left: 0;
   transition: all .2s ease;
+  z-index: 0;
 }
 
 div.content .items a:hover img.over {
@@ -437,4 +438,123 @@ div.content .items a:hover img.over {
 	font-size: 16px;
 	left: 0;
    }
+}
+
+div.content .items figcaption {
+  	font-family: "Raleway", sans-serif;
+  	text-align: left;
+  	font-size: 13px;
+  	margin-top: 10px;
+}
+
+div.content .items .box {
+	clear: both;
+	overflow: hidden;
+	content: '';
+	width: 160px;
+	height: 22px;
+	background: #38A9DE;
+	position: absolute;
+	font-size: 12px;
+	margin-top: 5px;
+	color: white;
+  	font-family: "Raleway", sans-serif;
+  	text-align: center;
+  	vertical-align:	center;
+  	padding: 2px;
+}
+
+div.content .items .underbox {
+	text-decoration: line-through;
+	margin-top: 35px;
+	font-family: "Raleway", sans-serif;
+	font-size: 12px;
+	color: grey;
+}
+
+div.content .items .sidebox {
+	position: absolute;
+	margin-top: -14px;
+	margin-left: 55px;
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	color: #38A9DE;
+	font-weight: bold;
+}
+
+div.content .items .lastbox {
+	margin-top: 10px;
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	color: #38A9DE;
+}
+
+div.content .items .flag-rectangle {
+	z-index: 4;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 10px;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 10px;
+	content: '';
+  	width: 0; 
+  	height: 0; 
+  	border-left: 17px solid transparent;
+  	border-right: 17px solid transparent;
+    border-top: 15px solid #cc0000;
+	color:white;
+}
+
+div.content .items .flag {
+	z-index: 3;
+	position: absolute;
+	margin-left: 10px;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	padding-top: 5px;
+	font-size: 10px;
+	content: '';
+	width: 35px;
+	height: 25px;
+	background: #cc0000;
+	color:white;
+}
+
+div.content .items a .checkitout {
+	font-weight: bold;
+	position: absolute;
+	content: '';
+	width: 180px;
+	height: 35px;
+	background: white;
+	border: 1px solid #38A9DE;
+	color: #38A9DE;
+	visibility: hidden;
+	text-align: center;
+	padding-top: 6px;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-top: 90%;
+	margin-left: 25%;
+}
+
+div.content .items a:hover .checkitout {
+	visibility: visible;
+
+}
+
+div.content .items .wishlist {
+	z-index: 1;
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	right: 0;
+	margin: 10px;
+	background: #e0e0e0;
+	background-size: auto;
+	border-radius: 25px;
+	opacity: .5;
 }
